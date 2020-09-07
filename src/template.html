@@ -5,11 +5,14 @@
   </head>
   <body>
     <div class="Header">
-      <div class="Header__FirstRow flex justify-start ">
+      <div class="Header__FirstRow flex justify-start align-center">
+
+        <!-- Google Logo -->
         <div class="Logo flex justify-center align-center">
           <img src="./assets/google_logo.png" width="92" height="30" />
         </div>
         
+        <!-- first line search box -->
         <div class="SearchBox flex justify-center align-center">
           <div class="SearchBox__Container ml1pt2 mr1pt2 flex flex-grow1">
             
@@ -39,13 +42,44 @@
               </svg>
             </div>
           </div>
+        </div>
 
+        <!-- space filler -->
+        <div class="flex-grow1"></div>
+
+        <!-- menu icon -->
+        <div class="AppleIcon">
+          <i class="fa fa-th"></i>
+        </div>
+
+        <!-- user avatar -->
+        <div class="UserAvatar "> 
+          <div class="UserAvatar__Text">
+            a
+          </div>
         </div>
       </div>
 
-      <div class="Header__SecondRow">
+      <div class="Header__SecondRow flex justify-start">
+        <div class="SpaceFiller"></div>
 
+        <!-- e.g. all, news, maps ...-->
+        <div class="InfoTypeSelections flex justify-around">
+          <div class="Active"> <i class="fa fa-search"></i> All </div>
+          <div> <i class="fa fa-film"></i> News </div>
+          <div> <i class="fa fa-map-marker"></i> Maps </div>
+          <div> <i class="fa fa-shopping-cart"></i> Shoppings </div>
+          <div> <i class="fa fa-file-image-o"></i> Images </div>
+          <div> <i class="fa fa-github"></i> More </div>
+          <div class="visibility-hidden"> Settings</div>
+          <div> Settings </div>
+          <div> Tools </div>
+        </div>
       </div>
+    </div>
+
+    <div class="SearchResults">
+
     </div>
   </body>
 </html>
