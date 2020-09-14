@@ -33,16 +33,27 @@ module.exports = {
       },
 
       {
-        test: /\.png$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[path][name].[ext]",
-            },
+        test: /\.(png|jpg|gif)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 8192,
+            name: "[path][name].[ext]",
           },
-        ],
+        },
       },
+
+      // {
+      //   test: /\.(png|jpg)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[path][name].[ext]",
+      //       },
+      //     },
+      //   ],
+      // },
     ], // end rules
   },
 };
