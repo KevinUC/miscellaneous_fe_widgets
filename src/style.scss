@@ -203,6 +203,7 @@ body {
       color: #5f6368;
       font-family: arial, sans-serif;
       width: 660px;
+      position: relative;
 
       > div {
         padding-top: 1.5rem;
@@ -219,18 +220,20 @@ body {
       .Active {
         position: relative;
         color: #5899ee;
-
-        &:after {
-          content: "";
-          position: absolute;
-          width: 60px;
-          height: 3px;
-          background-color: #1a73e8;
-          bottom: -8px;
-          left: 2px;
-        }
       }
-    }
+
+      .SlidingBorderBottom {
+        content: "";
+        position: absolute;
+        border-radius: 5%;
+        width: 35px;
+        height: 3px;
+        background-color: #1a73e8;
+        bottom: -10px;
+        left: 20px;
+        transition: all 1.25s cubic-bezier(0.19, 0, 0.22, 1);
+      }
+    } // end InfoTypeSelection
   }
 }
 
